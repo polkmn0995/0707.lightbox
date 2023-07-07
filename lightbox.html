@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIGHTBOX</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        class="thumb"
+        src="images/tree-1-thumb.jpg"
+        alt="1"
+        onclick="lightbox_open(1)"
+      />
+      <img
+        class="thumb"
+        src="images/tree-2-thumb.jpg"
+        alt="2"
+        onclick="lightbox_open(2)"
+      />
+      <img
+        class="thumb"
+        src="images/tree-3-thumb.jpg"
+        alt="3"
+        onclick="lightbox_open(3)"
+      />
+      <img
+        class="thumb"
+        src="images/tree-4-thumb.jpg"
+        alt="4"
+        onclick="lightbox_open(4)"
+      />
+      <img
+        class="thumb"
+        src="images/tree-5-thumb.jpg"
+        alt="5"
+        onclick="lightbox_open(5)"
+      />
+      <img
+        class="thumb"
+        src="images/tree-6-thumb.jpg"
+        alt="6"
+        onclick="lightbox_open(6)"
+      />
+    </header>
+
+    <div id="block"></div>
+
+    <div id="lightbox">
+      <figure>
+        <img src="images/tree-1.jpg" alt="1" class="active" />
+        <img src="images/tree-2.jpg" alt="2" />
+        <img src="images/tree-3.jpg" alt="3" />
+        <img src="images/tree-4.jpg" alt="4" />
+        <img src="images/tree-5.jpg" alt="5" />
+        <img src="images/tree-6.jpg" alt="6" />
+      </figure>
+      <div class="indicator">
+        <button onclick="change_img(this.innerHTML)">1</button>
+        <button onclick="change_img(this.innerHTML)">2</button>
+        <button onclick="change_img(this.innerHTML)">3</button>
+        <button onclick="change_img(this.innerHTML)">4</button>
+        <button onclick="change_img(this.innerHTML)">5</button>
+        <button onclick="change_img(this.innerHTML)">6</button>
+      </div>
+      <div class="btn-close" onclick="lightbox_close()">x</div>
+    </div>
+  </body>
+</html>
